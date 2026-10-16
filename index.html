@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Club Membership</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 709px;
+            margin: 42px auto;
+            padding: 20px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 6px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 16px 15px;
+            background-color: #05080b;
+            color: rgb(255, 255, 255);
+            border: none;
+            cursor: pointer;
+        }
+        #result, #members_box {
+            margin-top: 22px;
+            padding: 16px;
+            border: 1px solid #b9baba;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Club Membership Check</h2>
+
+
+
+    <div class="input-group">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" placeholder="ENTER">
+    </div>
+
+
+
+<div class="input-group">
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" placeholder="ENTER">
+    </div>
+
+    
+    <button py-click="check_candidate">Check Candidate</button>
+
+    <div id="result"></div>
+    <div id="members_box"></div>
+
+    
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
